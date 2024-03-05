@@ -3,6 +3,9 @@ import torch.nn as nn
 
 # Define Residual Block
 class ResidualBlock(nn.Module):
+    """
+    Residual block of 2 times convolutional layers.
+    """
     def __init__(self, in_channels, out_channels, stride=1):
         super(ResidualBlock, self).__init__()
         # First convolutional layer
