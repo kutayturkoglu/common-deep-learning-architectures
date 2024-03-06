@@ -2,7 +2,7 @@ from torch import nn
 from resblock import ResidualBlock
 
 class ResNet(nn.Module):
-    def __init__(self, num_classes=6):
+    def __init__(self, numclasses=6):
         super(ResNet, self).__init__()
         self.in_channels = 64
         # Initial convolutional layer
